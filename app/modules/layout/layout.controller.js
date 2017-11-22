@@ -11,6 +11,6 @@
     function layoutCtrl(Appservice,$state) {
         var vm = this;
     vm.islogged= Appservice.isLoggedin;
-     vm.Appservice=Appservice;
+     vm.appservice=Appservice;
     }
 })();

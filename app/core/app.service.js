@@ -31,6 +31,8 @@
         }
       
         this.isLoggedin=false;
+        this.searchQuery="";
+        this.loader=false;
             
         
     }

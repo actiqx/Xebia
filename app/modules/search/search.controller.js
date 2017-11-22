@@ -10,7 +10,7 @@
     /* @ngInject */
     function searchCtrl(Appservice,$state,dataFactory,server) {
         var vm = this;
-        vm.query = null;
+        vm.appservice = Appservice;
         vm.planets = [];
         vm.next=null;
         vm.previous=null;
@@ -18,18 +18,18 @@
         vm.maxIndex = "";
         vm.islogged=Appservice.isLoggedin;
         vm.search = function () {
-            if(vm.query.trim()!=""){
-                var url = `${server.host}${server.planet}` + vm.query ;
+        if(vm.appservice.searchQuery.trim()!=""){
+                var url = `${server.host}${server.planet}` + vm.appservice.searchQuery + "&ordering=population";
                 getHttpCall(url);
             }
             else{
                 vm.planet=[];
             }
-          
-           
         };
+        vm.search();
         
         vm.showDetails=function(obj){
+            vm.appservice.loader=true;
             dataFactory.setsomething(obj);
             $state.go('app.details');
         };
@@ -41,6 +41,7 @@
         };
         
         function getHttpCall(url){
+            vm.appservice.loader=true;
             Appservice.getApiCall(url).then(function (response) {
                 if (response && response.results.length > 0) {
                     vm.planets = response.results;
@@ -48,7 +49,9 @@
                     vm.previous=response.previous;
                     vm.maxIndex = getmax(vm.planets);
                     vm.hasRecord=true;
-
+                    vm.appservice.loader=false;
+                }else{
+                    vm.appservice.loader=false;
                 }
             });
         }

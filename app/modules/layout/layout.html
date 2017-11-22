@@ -16,7 +16,7 @@
 
 
         
-          <li class="nav-item active" ng-if="vm.Appservice.isLoggedin">
+          <li class="nav-item active" ng-if="vm.appservice.isLoggedin">
               <a class="nav-link" ui-sref="app.login" >Logout <span class="sr-only">(current)</span></a>
             </li>
 
@@ -26,5 +26,8 @@
   
   </div>
 </nav>
-
+<div id="loader" ng-if="vm.appservice.loader">
+      <div id="overlay"></div>
+      <div id="loading"></div>
+</div>
 <div ui-view></div>
