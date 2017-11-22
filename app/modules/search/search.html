@@ -1,0 +1,31 @@
+<div class="container">
+        <h1>search</h1>
+        <input type="search" ng-model="vm.query" class="form-control" placeholder="Search planets..."    ng-keyup="vm.search()"  />
+        <table class="table table-hover table-bordered results">
+            <thead>
+              <tr>
+                
+                
+                <th class="col-md-5 col-xs-5">Name</th>
+               
+                <th class="col-md-3 col-xs-3">Population</th>
+                <th><em class="fa fa-cog"></em></th>
+              </tr>
+              <tr class="warning no-result" ng-if="!vm.hasRecord">
+                <td colspan="4"><i class="fa fa-warning"></i> No result</td>
+              </tr>
+            </thead>
+            <tbody>
+                    <tr ng-repeat="planet in vm.planets" ng-class="{'highlight_row':vm.maxIndex==$index}">  
+                            
+                            <td>{{planet.name}}</td>
+                            <td>{{planet.population}}</td>
+                            <td><a class="btn btn-default" ng-click="vm.showDetails(planet)"><em class="fa fa-eye"></em></a></td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+            <button ng-click="vm.previousCall(vm.previous)" class="btn btn-default" ng-hide="vm.previous==null">previous</button>
+            <button ng-click="vm.nextCall(vm.next)" class="btn btn-default" ng-hide="vm.next==null">next</button>
+
+</div>

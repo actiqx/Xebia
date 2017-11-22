@@ -1,0 +1,54 @@
+<div class="container">
+    <h1>Details</h1>
+    <div class="table-responsive panel">
+        <table class="table">
+            <tbody>
+
+                <tr>
+                    <td class="text-success">Name</td>
+                    <td> {{vm.planet.name}}</td>
+                </tr>
+                <tr>
+                    <td class="text-success">
+                        </i> Rotation Period</td>
+                    <td> {{vm.planet.rotation_period}}</td>
+                </tr>
+                <tr>
+                    <td class="text-success"> Orbital Period</td>
+                    <td> {{vm.planet.orbital_period}}</td>
+                </tr>
+                <tr>
+                    <td class="text-success"> Diameter</td>
+                    <td> {{vm.planet.diameter}}</td>
+                </tr>
+                <tr>
+                    <td class="text-success"> Climate</td>
+                    <td> {{vm.planet.climate}}</td>
+                </tr>
+
+                <tr>
+                    <td class="text-success"> Gravity</td>
+                    <td>
+                            {{vm.planet.gravity }}</td>
+                </tr>
+                <tr>
+                    <td class="text-success"> Terrain</td>
+                    <td>
+                            {{vm.planet.terrain}}</td>
+                </tr>
+                <tr>
+                    <td class="text-success"> Surface Water</td>
+                    <td>
+                            {{vm.planet.surface_water}} </td>
+                </tr>
+                <tr>
+                    <td class="text-success"> Population</td>
+                    <td>
+                            {{vm.planet.population}}</td>
+                </tr>
+               
+            </tbody>
+        </table>
+        <a class="btn btn-primary" ng-click="vm.goback()">back</a>
+    </div>
+</div>

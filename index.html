@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Xebia Star Wars</title>
+  </head>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+   <!--  vendor js -->
+   <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="node_modules/xyz-angular-swapi/dist/xyz-angular-swapi.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+
+   <!--  End vendor js -->
+
+   <!--  App js -->
+   <script src="app/app.js"></script>
+   <script src="app/core/app.routes.js"></script>
+   <script src="app/core/app.service.js"></script>
+   <script src="app/core/app.constant.js"></script>
+   <script src="app/services/common.service.js"></script>
+   <script src="app/modules/layout/layout.controller.js"></script>
+   <script src="app/modules/home/home.controller.js"></script>
+   <script src="app/modules/login/login.module.js"></script>
+   <script src="app/modules/login/login.controller.js"></script>
+   <script src="app/modules/search/search.module.js"></script>
+   <script src="app/modules/search/search.controller.js"></script>
+   <script src="app/modules/search/searchdetail.controller.js"></script>
+
+   <!--  End App js -->
+
+
+    <body ng-app="app">
+
+
+      <ui-view> 
+        <i>Loading ....</i>
+       </ui-view>
+
+   </body>
+</html>

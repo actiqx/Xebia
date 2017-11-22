@@ -1,0 +1,254 @@
+body {
+    background: #fff !important;
+  }
+  
+  .wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  
+  .form-signin {
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-signin .form-signin-heading,
+  .form-signin .checkbox {
+    margin-bottom: 30px;
+  }
+  
+  .form-signin .checkbox {
+    font-weight: normal;
+  }
+  
+  .form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  
+  .form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  /* Star war */
+  body {
+    background: url("http://wallpapercave.com/wp/pEeUsp1.jpg");
+    font-size: 16px;
+  }
+  
+  ul li { 
+    display:inline-block;
+  }
+  
+  a {
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-family:helvetica;
+  }
+  
+  a:hover {
+      color:#333333;
+      text-decoration: none;
+  }
+  
+  .hero {
+    background: url(http://wallpapercave.com/wp/pEeUsp1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    height: 100%;
+    padding: 20px 0 40px 0px;  
+  }
+  
+  .logo {
+      margin: auto;
+      width: 60%;
+      padding: 10px;
+      max-height: 400px;
+      min-width: 200px;
+  }
+  
+  .transbg {
+    background: rgba(0,0,0,0.3); 
+    color: #fff; 
+    padding: 1rem; 
+    font-family: Avenir, Helvetica, sans-serif; 
+  }
+  
+  h1 {
+    font-family: 'Days One';
+      font-size: 30px;
+    color: #FFE807;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 500;
+      line-height: 46.4px;
+  }
+  
+  h2 {
+    font-family: 'Days One';
+      font-size: 30px;
+    color: #FFFFFF;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 500;
+      line-height: 46.4px;
+  }
+  
+  h3 {
+      font-family: 'Droid Sans';
+      font-size: 14px;
+      font-style: italic;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 20px;
+  }
+  
+  h4 {
+      font-family: 'Days One'; 
+      font-size: 18px;
+    color: #fff;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 100;
+      line-height: 22px;
+  }
+  
+  p {
+    font-family: Jura;
+      font-size: 20px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 700;
+      line-height: 21px;
+  }
+  
+  .original  {
+    background: url("http://imageshack.com/a/img923/1620/BR6ySW.png"); 
+    background-position: center center;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+  
+  .prequel  {
+    background: url("http://imageshack.com/a/img924/3503/wBPJbG.png"); 
+    background-position: center center;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .clone  {
+    background: url("http://imageshack.com/a/img922/6489/lsxaZS.png"); 
+    background-position: center center;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .purch  {
+    background: url("http://media.moddb.com/images/articles/1/91/90566/CwBattle_of_Kashyyyk.jpg"); 
+    background-position: center center;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .sequel {
+    background: url("http://imageshack.com/a/img924/6131/ePQD4Q.png"); 
+    background-position: center center;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .anth {
+    background: url("http://gamerssphere.com/wp-content/uploads/2015/05/Boba-fett-810x400.jpg"); 
+    background-position: center center;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .footer {
+    background: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+    height: 100%;
+    padding: 10px 0 10px 0px;  
+  }
+  
+  .ftext {
+    color: #fff; 
+    padding: 1rem; 
+    font-family: Avenir, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  
+  .btn-warning {
+      color: #fff;
+      background-color: #CCB905;
+      border-color: #eea236;
+  }
+  
+  btn {
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 0;
+      font-size: 18px;
+      font-weight: 500;
+  }
+  
+  .credit {
+    background-color: #333;
+     
+  }
+  .highlight_row{
+font-weight: bold;
+background: #CCB905;
+  }
+  
